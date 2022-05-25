@@ -1,0 +1,53 @@
+﻿@model Teste1.Models.Curriculos
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 style="color:whitesmoke">Detalhes</h1>
+
+<div class="table table-dark table-striped">
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Funcao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Funcao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cidade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cidade)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Dta_Nasc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Dta_Nasc)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Salario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Salario)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Obs)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Obs)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-danger" asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> |
+    <a class="btn btn-primary" asp-action="Index">Voltar para a lista</a>
+</div>

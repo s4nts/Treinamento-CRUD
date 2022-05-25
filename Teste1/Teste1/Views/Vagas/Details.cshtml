@@ -1,0 +1,47 @@
+﻿@model Teste1.Models.Vagas
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 style="color:whitesmoke">Detalhes</h1>
+
+<div class="table table-dark table-striped">
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Funcao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Funcao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nme_Empresa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nme_Empresa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cidade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cidade)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Desc_Vaga)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Desc_Vaga)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Salario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Salario)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-danger" asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> |
+    <a class="btn btn-primary" asp-action="Index">Voltar para a lista</a>
+</div>
