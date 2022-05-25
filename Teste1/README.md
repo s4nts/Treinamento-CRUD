@@ -1,1 +1,2 @@
-Nada, por enquanto!
+Projeto Crud usando a Entity framework ASP.Net core, ligando a base disponivel no SQL server para cadastro de usuário e empresa.
+O proximo passo é fazer uma tela de Login onde permita o usuário se candidatar a vaga da empresa.
